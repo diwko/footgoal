@@ -8,6 +8,7 @@ setup(name='footgoal',
       author_email='dawid.siwko@gmail.com',
       license='MIT',
       packages=['footgoal'],
+      package_data={'footgoal': ['classifier_model']},
       entry_points={
           'console_scripts': [
               'footgoal = footgoal.main:main'
