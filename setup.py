@@ -10,7 +10,7 @@ setup(name='footgoal',
       packages=['footgoal'],
       entry_points={
           'console_scripts': [
-              'footgoal = footgoal.main'
+              'footgoal = footgoal.main:main'
           ]
       },
       install_requires=[
