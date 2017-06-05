@@ -1,8 +1,8 @@
-from download_data import FootballData
+from footgoal.download_data import FootballData
 import csv
 from urllib.error import HTTPError
 from json.decoder import JSONDecodeError
-from match_info import get_data_row
+from footgoal.match_info import get_data_row
 
 
 def get_learning_row(fixture, count=5):

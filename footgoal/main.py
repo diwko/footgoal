@@ -1,8 +1,8 @@
-from download_data import UnrecognizedTeamError
+from footgoal.download_data import UnrecognizedTeamError
 from urllib.error import HTTPError
 from json.decoder import JSONDecodeError
-from team import Team
-from team import Match
+from footgoal.basic_parts import Team
+from footgoal.basic_parts import Match
 
 
 def get_team(input_message):

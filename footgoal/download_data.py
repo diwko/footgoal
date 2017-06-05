@@ -1,7 +1,7 @@
 import json
 import urllib.request as urlreq
 import datetime
-from fixture import Fixture, Result
+from footgoal.fixture import Fixture, Result
 import time
 
 

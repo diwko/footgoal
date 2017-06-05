@@ -1,5 +1,5 @@
-from download_data import FootballData
-from fixture import FixturesOperation
+from footgoal.download_data import FootballData
+from footgoal.fixture import FixturesOperation
 import datetime
 
 

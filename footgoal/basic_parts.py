@@ -1,7 +1,7 @@
-from download_data import FootballData
-from fixture import FixturesOperation
+from footgoal.download_data import FootballData
+from footgoal.fixture import FixturesOperation
 import datetime
-from match_info import get_data_row_with_teams
+from footgoal.match_info import get_data_row_with_teams
 from sklearn.externals import joblib
 
 
