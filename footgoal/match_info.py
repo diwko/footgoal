@@ -20,6 +20,8 @@ def get_team_fixtures_all(team_id, date):
 def get_points_goals(fixtures, team_id):
     stats = FixturesOperation.stats(fixtures, team_id)
     matches = stats[0] + stats[1] + stats[2]
+    if matches <= 0:
+        return 0, 0
     return int((stats[0] - stats[1]) * 100 / matches), int(
         stats[3] * 100 / matches)
 

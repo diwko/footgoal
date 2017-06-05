@@ -104,6 +104,8 @@ class FixturesOperation:
     @staticmethod
     def to_string(fixtures):
         text = ''
+        if len(fixtures) == 0:
+            return text
         for i in range(len(fixtures) - 1):
             text += fixtures[i].to_string() + '\n'
         text += fixtures[-1].to_string()
