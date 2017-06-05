@@ -1,0 +1,278 @@
+{
+"fixture": {
+"_links": {
+"self": {
+"href": "http://api.football-data.org/v1/fixtures/150841"
+},
+"competition": {
+"href": "http://api.football-data.org/v1/competitions/426"
+},
+"homeTeam": {
+"href": "http://api.football-data.org/v1/teams/322"
+},
+"awayTeam": {
+"href": "http://api.football-data.org/v1/teams/338"
+}
+},
+"date": "2016-08-13T11:30:00Z",
+"status": "FINISHED",
+"matchday": 1,
+"homeTeamName": "Hull City FC",
+"awayTeamName": "Leicester City FC",
+"result": {
+"goalsHomeTeam": 2,
+"goalsAwayTeam": 1
+},
+"odds": {
+"homeWin": 3.25,
+"draw": 3.25,
+"awayWin": 2.2
+}
+},
+"head2head": {
+"count": 4,
+"timeFrameStart": "2014-12-28",
+"timeFrameEnd": "2017-03-04",
+"homeTeamWins": 1,
+"awayTeamWins": 2,
+"draws": 1,
+"lastHomeWinHomeTeam": {
+"_links": {
+"self": {
+"href": "http://api.football-data.org/v1/fixtures/150841"
+},
+"competition": {
+"href": "http://api.football-data.org/v1/competitions/426"
+},
+"homeTeam": {
+"href": "http://api.football-data.org/v1/teams/322"
+},
+"awayTeam": {
+"href": "http://api.football-data.org/v1/teams/338"
+}
+},
+"date": "2016-08-13T11:30:00Z",
+"status": "FINISHED",
+"matchday": 1,
+"homeTeamName": "Hull City FC",
+"awayTeamName": "Leicester City FC",
+"result": {
+"goalsHomeTeam": 2,
+"goalsAwayTeam": 1
+},
+"odds": {
+"homeWin": 3.25,
+"draw": 3.25,
+"awayWin": 2.2
+}
+},
+"lastWinHomeTeam": {
+"_links": {
+"self": {
+"href": "http://api.football-data.org/v1/fixtures/150841"
+},
+"competition": {
+"href": "http://api.football-data.org/v1/competitions/426"
+},
+"homeTeam": {
+"href": "http://api.football-data.org/v1/teams/322"
+},
+"awayTeam": {
+"href": "http://api.football-data.org/v1/teams/338"
+}
+},
+"date": "2016-08-13T11:30:00Z",
+"status": "FINISHED",
+"matchday": 1,
+"homeTeamName": "Hull City FC",
+"awayTeamName": "Leicester City FC",
+"result": {
+"goalsHomeTeam": 2,
+"goalsAwayTeam": 1
+},
+"odds": {
+"homeWin": 3.25,
+"draw": 3.25,
+"awayWin": 2.2
+}
+},
+"lastAwayWinAwayTeam": {
+"_links": {
+"self": {
+"href": "http://api.football-data.org/v1/fixtures/137845"
+},
+"competition": {
+"href": "http://api.football-data.org/v1/competitions/354"
+},
+"homeTeam": {
+"href": "http://api.football-data.org/v1/teams/322"
+},
+"awayTeam": {
+"href": "http://api.football-data.org/v1/teams/338"
+}
+},
+"date": "2014-12-28T15:00:00Z",
+"status": "FINISHED",
+"matchday": 19,
+"homeTeamName": "Hull City FC",
+"awayTeamName": "Leicester City FC",
+"result": {
+"goalsHomeTeam": 0,
+"goalsAwayTeam": 1
+},
+"odds": null
+},
+"lastWinAwayTeam": {
+"_links": {
+"self": {
+"href": "http://api.football-data.org/v1/fixtures/150575"
+},
+"competition": {
+"href": "http://api.football-data.org/v1/competitions/426"
+},
+"homeTeam": {
+"href": "http://api.football-data.org/v1/teams/338"
+},
+"awayTeam": {
+"href": "http://api.football-data.org/v1/teams/322"
+}
+},
+"date": "2017-03-04T15:00:00Z",
+"status": "FINISHED",
+"matchday": 27,
+"homeTeamName": "Leicester City FC",
+"awayTeamName": "Hull City FC",
+"result": {
+"goalsHomeTeam": 3,
+"goalsAwayTeam": 1,
+"halfTime": {
+"goalsHomeTeam": 1,
+"goalsAwayTeam": 1
+}
+},
+"odds": {
+"homeWin": 2.05,
+"draw": 3.6,
+"awayWin": 3.7
+}
+},
+"fixtures": [
+{
+"_links": {
+"self": {
+"href": "http://api.football-data.org/v1/fixtures/150575"
+},
+"competition": {
+"href": "http://api.football-data.org/v1/competitions/426"
+},
+"homeTeam": {
+"href": "http://api.football-data.org/v1/teams/338"
+},
+"awayTeam": {
+"href": "http://api.football-data.org/v1/teams/322"
+}
+},
+"date": "2017-03-04T15:00:00Z",
+"status": "FINISHED",
+"matchday": 27,
+"homeTeamName": "Leicester City FC",
+"awayTeamName": "Hull City FC",
+"result": {
+"goalsHomeTeam": 3,
+"goalsAwayTeam": 1,
+"halfTime": {
+"goalsHomeTeam": 1,
+"goalsAwayTeam": 1
+}
+},
+"odds": {
+"homeWin": 2.05,
+"draw": 3.6,
+"awayWin": 3.7
+}
+},
+{
+"_links": {
+"self": {
+"href": "http://api.football-data.org/v1/fixtures/150841"
+},
+"competition": {
+"href": "http://api.football-data.org/v1/competitions/426"
+},
+"homeTeam": {
+"href": "http://api.football-data.org/v1/teams/322"
+},
+"awayTeam": {
+"href": "http://api.football-data.org/v1/teams/338"
+}
+},
+"date": "2016-08-13T11:30:00Z",
+"status": "FINISHED",
+"matchday": 1,
+"homeTeamName": "Hull City FC",
+"awayTeamName": "Leicester City FC",
+"result": {
+"goalsHomeTeam": 2,
+"goalsAwayTeam": 1
+},
+"odds": {
+"homeWin": 3.25,
+"draw": 3.25,
+"awayWin": 2.2
+}
+},
+{
+"_links": {
+"self": {
+"href": "http://api.football-data.org/v1/fixtures/137835"
+},
+"competition": {
+"href": "http://api.football-data.org/v1/competitions/354"
+},
+"homeTeam": {
+"href": "http://api.football-data.org/v1/teams/338"
+},
+"awayTeam": {
+"href": "http://api.football-data.org/v1/teams/322"
+}
+},
+"date": "2015-03-14T15:00:00Z",
+"status": "FINISHED",
+"matchday": 29,
+"homeTeamName": "Leicester City FC",
+"awayTeamName": "Hull City FC",
+"result": {
+"goalsHomeTeam": 0,
+"goalsAwayTeam": 0
+},
+"odds": null
+},
+{
+"_links": {
+"self": {
+"href": "http://api.football-data.org/v1/fixtures/137845"
+},
+"competition": {
+"href": "http://api.football-data.org/v1/competitions/354"
+},
+"homeTeam": {
+"href": "http://api.football-data.org/v1/teams/322"
+},
+"awayTeam": {
+"href": "http://api.football-data.org/v1/teams/338"
+}
+},
+"date": "2014-12-28T15:00:00Z",
+"status": "FINISHED",
+"matchday": 19,
+"homeTeamName": "Hull City FC",
+"awayTeamName": "Leicester City FC",
+"result": {
+"goalsHomeTeam": 0,
+"goalsAwayTeam": 1
+},
+"odds": null
+}
+]
+}
+}
