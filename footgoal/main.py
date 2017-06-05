@@ -3,25 +3,39 @@ from urllib.error import HTTPError
 from json.decoder import JSONDecodeError
 from footgoal.basic_parts import Team
 from footgoal.basic_parts import Match
+import argparse
 
 
-def get_team(input_message):
+def get_team_name(input_message):
+    team_name = input(input_message)
+    return team_name.replace(' ', '_')
+
+
+def get_team(input_message, team_name=None):
+    if team_name is None:
+        team_name = get_team_name(input_message)
+
     while True:
-        team_name = input(input_message)
-        team_name = team_name.replace(' ', '_')
         try:
             return Team(team_name)
         except UnrecognizedTeamError:
             print('Unrecognized team\n')
+            team_name = get_team_name(input_message)
         except (HTTPError, JSONDecodeError):
             print('Something went wrong. Try again')
+            team_name = get_team_name(input_message)
 
 
 def main():
-    home_team = get_team("ENTER HOME TEAM: ")
-    away_team = get_team("ENTER AWAY TEAM: ")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--home", help='home team name', default=None)
+    parser.add_argument("--away", help='away team name', default=None)
+    args = parser.parse_args()
 
-    while True:
+    home_team = get_team("ENTER HOME TEAM: ", args.home)
+    away_team = get_team("ENTER AWAY TEAM: ", args.away)
+
+    for i in range(10):
         try:
             match = Match(home_team, away_team)
             break
