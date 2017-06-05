@@ -69,6 +69,8 @@ class FixturesOperation:
     @classmethod
     def free_days(cls, fixtures, date=datetime.datetime.now()):
         x = cls.index_before_date(fixtures, date)
+        if x == -1:
+            return 0
         return (date - fixtures[x].date).days
 
     @staticmethod
