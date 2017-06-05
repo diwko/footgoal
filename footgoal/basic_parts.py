@@ -87,7 +87,7 @@ class Match:
                                            self.h2h_fixtures, match_date,
                                            count)
 
-        classifier = joblib.load('footgoal/data/classifier_model')
+        classifier = joblib.load('data/classifier_model')
         result = classifier.predict([data_row])
         if result == 1:
             return self.home_team.name
