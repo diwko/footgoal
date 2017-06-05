@@ -3,6 +3,7 @@ from footgoal.fixture import FixturesOperation
 import datetime
 from footgoal.match_info import get_data_row_with_teams
 from sklearn.externals import joblib
+import os
 
 
 def get_season(match_date=datetime.datetime.now()):
@@ -77,17 +78,22 @@ class Match:
         return FootballData.get_fixtures_h2h(match_id)
 
     def get_h2h_fixtures(self, count=5, before=datetime.datetime.now()):
-        return FixturesOperation.last_fixtures(self.h2h_fixtures, count, before)
+        return FixturesOperation.last_fixtures(self.h2h_fixtures, count,
+                                               before)
 
     def get_h2h_h_a_fixtures(self, count=5, before=datetime.datetime.now()):
-        return FixturesOperation.last_fixtures(self.h2h_fixtures, count, before, lambda x: x.home_team_id == self.home_team.team_id)
+        return FixturesOperation.last_fixtures(self.h2h_fixtures, count,
+                                               before, lambda x:
+                                               x.home_team_id ==
+                                               self.home_team.team_id)
 
     def predict(self, count=5, match_date=datetime.datetime.now()):
         data_row = get_data_row_with_teams(self.home_team, self.away_team,
                                            self.h2h_fixtures, match_date,
                                            count)
 
-        classifier = joblib.load('classifier_model')
+        classifier = joblib.load(os.path.dirname(os.path.abspath(__file__)) +
+                                 '/data/classifier_model')
         result = classifier.predict([data_row])
         if result == 1:
             return self.home_team.name

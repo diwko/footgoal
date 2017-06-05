@@ -6,8 +6,7 @@ from footgoal.basic_parts import Match
 
 
 def get_team(input_message):
-    ok = False
-    while not ok:
+    while True:
         team_name = input(input_message)
         team_name = team_name.replace(' ', '_')
         try:
@@ -22,7 +21,12 @@ def main():
     home_team = get_team("ENTER HOME TEAM: ")
     away_team = get_team("ENTER AWAY TEAM: ")
 
-    match = Match(home_team, away_team)
+    while True:
+        try:
+            match = Match(home_team, away_team)
+            break
+        except (HTTPError, JSONDecodeError):
+            pass
 
     home_team.print_fixtures()
     print('\n')
