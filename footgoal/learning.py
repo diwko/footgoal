@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn.externals import joblib
-from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import GaussianNB
 import os
 
 
@@ -24,9 +24,9 @@ def create_model():
                          dtype=int, delimiter=";", skiprows=0, usecols=9)
 
     y_convert(learn_y)
-
-    classifier = LogisticRegression()
-    classifier.fit(learn_x, learn_y)
+    
+    classifier = GaussianNB()
+    classifier.fit(learn_x, learn_y)	
 
     joblib.dump(classifier, get_installation_dir() + '/data/classifier_model')
 
@@ -44,3 +44,7 @@ def test_model(test_data):
                              '/data/classifier_model')
 
     return classifier.score(test_x, test_y)
+    
+if __name__ == '__main__':
+    create_model()
+    print(test_model('/data/test_data.csv'))

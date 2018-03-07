@@ -47,19 +47,19 @@ def download_learning_data(competition_id, season, path, delimiter=';'):
     print('HTTP errors:', http_errors)
     print('JSON errors:', json_errors)
     print('NO DATA:', zero_div)
+    
 
+if __name__ == __main__:
+	download_learning_data(394, 2015, 'data/all_2015.csv') #Bundesliga
+	download_learning_data(396, 2015, 'data/all_2015.csv') #Ligue 1
+	download_learning_data(398, 2015, 'data/all_2015.csv') #Premier League
+	download_learning_data(399, 2015, 'data/all_2015.csv') #Premiera Division
+	download_learning_data(401, 2015, 'data/all_2015.csv') #Serie A
 
-#download_learning_data(394, 2015, 'data/all_2015.csv') #Bundesliga
-#download_learning_data(396, 2015, 'data/all_2015.csv') #Ligue 1
-#download_learning_data(398, 2015, 'data/all_2015.csv') #Premier League
-#download_learning_data(399, 2015, 'data/all_2015.csv') #Premiera Division
-#download_learning_data(401, 2015, 'data/all_2015.csv') #Serie A
+	download_learning_data(430, 2016, 'data/all_2016.csv') #Bundesliga
+	download_learning_data(434, 2016, 'data/all_2016.csv') #Ligue 1
+	download_learning_data(426, 2016, 'data/all_2016.csv') #Premier League
+	download_learning_data(436, 2016, 'data/all_2016.csv') #Premiera Division
+	download_learning_data(438, 2016, 'data/all_2016.csv') #Serie A
 
-#download_learning_data(430, 2016, 'data/all_2016.csv') #Bundesliga
-#download_learning_data(434, 2016, 'data/all_2016.csv') #Ligue 1
-#download_learning_data(426, 2016, 'data/all_2016.csv') #Premier League
-#download_learning_data(436, 2016, 'data/all_2016.csv') #Premiera Division
-#download_learning_data(438, 2016, 'data/all_2016.csv') #Serie A
-
-
-#download_learning_data(433, 2016, 'data/test_data.csv') #Eredivisie
+	download_learning_data(433, 2016, 'data/test_data.csv') #Eredivisie
